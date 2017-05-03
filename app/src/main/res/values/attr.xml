@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+    <attr name="src" format="reference"></attr>
+
+    <declare-styleable name="CustomImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+        <attr name="src" />
+    </declare-styleable>
+
+
+    <declare-styleable name="Circle">
+        <attr name="circleBackground" format="integer" />
+        <attr name="firstChildPosition">
+            <enum name="East" value="0" />
+            <enum name="South" value="90" />
+            <enum name="West" value="180" />
+            <enum name="North" value="270" />
+        </attr>
+        <attr name="rotateToCenter" format="boolean" />
+        <attr name="isRotating" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="name" format="string" />
+    </declare-styleable>
+    <declare-styleable name="CompoundButton">
+        <attr name="android:button" />
+    </declare-styleable>
+    <declare-styleable name="TogglePrefAttrs">
+        <attr name="android:preferenceLayoutChild" />
+    </declare-styleable>
+
+    <!--
+         These are the attributes that we want to retrieve from the theme
+         in view/Gallery1.java
+    -->
+    <declare-styleable name="Gallery">
+        <attr name="android:galleryItemBackground" />
+    </declare-styleable>
+
+    <attr name="rightPadding" format="dimension"></attr>
+
+    <declare-styleable name="SlidingMenu">
+        <attr name="rightPadding"></attr>
+    </declare-styleable>
+    <!-- 自定义进度条 -->
+    <declare-styleable name="HorizontalProgressBarWithNumber">
+        <attr name="progress_unreached_color" format="color" />
+        <attr name="progress_reached_color" format="color" />
+        <attr name="progress_reached_bar_height" format="dimension" />
+        <attr name="progress_unreached_bar_height" format="dimension" />
+        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+        <attr name="progress_text_offset" format="dimension" />
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="RoundProgressBarWidthNumber">
+        <attr name="radius" format="dimension" />
+    </declare-styleable>
+
+    <attr name="item_count" format="integer"></attr>
+    <attr name="indicator_color" format="color"></attr>
+    <attr name="tab_text_selected_color" format="color"></attr>
+    <attr name="tab_text_normal_color" format="color"></attr>
+
+    <declare-styleable name="ViewPagerIndicator">
+        <attr name="item_count" />
+        <attr name="indicator_color" />
+        <attr name="tab_text_selected_color" />
+        <attr name="tab_text_normal_color" />
+    </declare-styleable>
+
+    <!-- 手势锁 -->
+    <attr name="color_no_finger_inner_circle" format="color" />
+    <attr name="color_no_finger_outer_circle" format="color" />
+    <attr name="color_finger_on" format="color" />
+    <attr name="color_finger_up" format="color" />
+    <attr name="count" format="integer" />
+    <attr name="tryTimes" format="integer" />
+
+    <declare-styleable name="GestureLockViewGroup">
+        <attr name="color_no_finger_inner_circle" />
+        <attr name="color_no_finger_outer_circle" />
+        <attr name="color_finger_on" />
+        <attr name="color_finger_up" />
+        <attr name="count" />
+        <attr name="tryTimes" />
+    </declare-styleable>
+
+</resources>

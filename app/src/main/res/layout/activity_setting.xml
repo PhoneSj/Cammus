@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/title_relativeLayout"
+        android:background="@color/blue">
+
+        <ImageView
+            android:id="@+id/imageView_settingAct_back"
+            style="@style/title_left_imageview"
+            android:src="@drawable/selector_imageview_back" />
+
+        <TextView
+            style="@style/title_textsize"
+            android:text="设置" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_settingAct_gesturePwd"
+            style="@style/setting_item">
+
+            <TextView
+                style="@style/content_item_text_style"
+                android:text="手势密码"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView style="@style/content_item_image_enter_style" />
+        </RelativeLayout>
+
+        <TextView style="@style/diver" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_settingAct_checkUpdate"
+            style="@style/setting_item">
+
+            <TextView
+                style="@style/content_item_text_style"
+                android:text="检查更新"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView style="@style/content_item_image_enter_style" />
+        </RelativeLayout>
+
+        <TextView style="@style/diver" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_setting_about"
+            style="@style/setting_item">
+
+            <TextView
+                style="@style/content_item_text_style"
+                android:text="关于"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView style="@style/content_item_image_enter_style" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout_loginAct_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        style="@style/title_relativeLayout"
+        android:background="@color/blue">
+
+        <ImageView
+            android:id="@+id/imageView_loginAct_back"
+            style="@style/title_left_imageview"
+            android:src="@drawable/selector_imageview_back" />
+
+        <TextView
+            style="@style/title_textsize"
+            android:text="账号登陆" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.cammuse.intelligence.common.EdittextWithClear
+                android:id="@+id/editTextWithClear_loginAct_username"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:background="@drawable/selector_edittext_bg_login_up"
+                android:ems="10"
+                android:hint="手机号码"
+                android:inputType="phone"
+                android:paddingLeft="15dp"
+                android:paddingRight="15sp" />
+
+            <com.cammuse.intelligence.common.EdittextWithPwd
+                android:id="@+id/editTextWithPwd_loginAct_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:layout_weight="1"
+                android:background="@drawable/selector_edittext_bg_login_down"
+                android:ems="10"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                android:paddingRight="15sp" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height">
+
+            <TextView
+                android:id="@+id/textView_loginAct_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="新用户注册"
+                android:textColor="@color/green"
+                android:textSize="@dimen/item_text_size" />
+
+            <TextView
+                android:id="@+id/textView_loginAct_forgetPwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="忘记密码"
+                android:textSize="@dimen/item_text_size" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button_loginAct_goto"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:background="@drawable/selector_button_round_green"
+            android:text="登陆"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/content_textsize_middle" />
+    </LinearLayout>
+
+</LinearLayout>

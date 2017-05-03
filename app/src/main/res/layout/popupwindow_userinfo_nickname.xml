@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout_userinfoNicknamePopup_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_pur"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="填写昵称"
+        android:textSize="@dimen/title_textsize" />
+
+
+    <com.cammuse.intelligence.common.EdittextWithClear
+        android:id="@+id/textView_userinfoNicknamePopup_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_edittext_login"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="请输入昵称" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_userinfoNicknamePopup_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="取消"
+            android:background="@drawable/selector_button_userinfo_left"/>
+
+        <Button
+            android:id="@+id/button_userinfoNicknamePopup_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="确定"
+            android:background="@drawable/selector_button_userinfo_right"/>
+    </LinearLayout>
+
+</LinearLayout>

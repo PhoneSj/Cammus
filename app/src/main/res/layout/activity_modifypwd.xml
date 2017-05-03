@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/title_relativeLayout"
+        android:background="@color/gray">
+
+        <ImageView
+            android:id="@+id/imageView_modifyPwdAct_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/selector_imageview_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="账号登陆"
+            android:textSize="@dimen/title_textsize" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_edittext_bg_login_up"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="当前密码" />
+
+            <com.cammuse.intelligence.common.EdittextWithClear
+                android:id="@+id/editTextWithClear_modifyPwdAct_currentPwd"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:background="@null"
+                android:ems="10"
+                android:hint="手机号码"
+                android:inputType="phone"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_edittext_bg_login_down"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="新密码" />
+
+            <com.cammuse.intelligence.common.EdittextWithPwd
+                android:id="@+id/editTextWithPwd_modifyPwdAct_newPwd"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:background="@null"
+                android:ems="10"
+                android:hint="输入新密码（6~15位字符）"
+                android:inputType="phone"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_modifyPwdAct_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_button_round_green"
+            android:text="确定" />
+    </LinearLayout>
+
+
+</LinearLayout>

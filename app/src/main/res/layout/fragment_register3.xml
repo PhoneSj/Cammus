@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <TextView
+        android:id="@+id/textView_registerFrag3_userinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="20dp"
+        android:text="你注册的手机号为15907956768"
+        android:textColor="@color/gray"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="20dp"
+        android:text="请设置你的密码"
+        android:textColor="@color/gray"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.cammuse.intelligence.common.EdittextWithClear
+            android:id="@+id/editTextWithClear_registerFrag3_firstPwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_edittext_register"
+            android:ems="10"
+            android:hint="请输入密码(6~15位)"
+            android:inputType="phone"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" />
+
+        <com.cammuse.intelligence.common.EdittextWithClear
+            android:id="@+id/editTextWithClear_registerFrag3_secondPwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_edittext_register"
+            android:ems="10"
+            android:hint="请输入确认密码"
+            android:inputType="phone"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_registerFrag3_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/prompt" />
+
+        <TextView
+            android:id="@+id/textView_registerFrag3_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="密码长度为6~15位" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_registerFrag3_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_button_round_green"
+        android:text="提交" />
+</LinearLayout>

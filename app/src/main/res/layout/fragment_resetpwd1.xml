@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="卡妙思账号安全验证"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="为了保护账号安全，需要验证手机有效性"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/textView_resetPwdFrag1_userInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="点击发送短信验证按钮，将会发送一条有验证码的短信至手机"
+        android:textColor="@color/gray"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/button_resetPwdFrag1_getRemoteCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/selector_button_round_green"
+        android:text="发送短信" />
+
+</LinearLayout>

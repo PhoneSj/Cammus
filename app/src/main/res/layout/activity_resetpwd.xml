@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/title_relativeLayout"
+        android:background="@color/blue">
+
+        <ImageView
+            android:id="@+id/imageView_resetPwdAct_back"
+            style="@style/title_left_imageview"
+            android:src="@drawable/selector_imageview_back" />
+
+        <TextView
+            style="@style/title_textsize"
+            android:text="忘记密码" />
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout_resetPwdAct_container"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+</LinearLayout>

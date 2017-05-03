@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="horizontal" 
+    android:background="@color/blue">
+
+    <LinearLayout
+        android:id="@+id/linearLayut_main_tab_manual"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/imageButton_main_tab_manual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@mipmap/tab_manual_checked" />
+
+        <TextView
+            android:id="@+id/textView_main_tab_manual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_manual_title_manual_name"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/tab_textsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayut_main_tab_automatic"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/imageButton_main_tab_automatic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@mipmap/tab_automatic_unchecked" />
+
+        <TextView
+            android:id="@+id/textView_main_tab_automatic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_control_tab_automatic_name"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/tab_textsize" />
+    </LinearLayout>
+
+</LinearLayout>

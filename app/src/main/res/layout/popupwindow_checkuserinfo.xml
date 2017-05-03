@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp">
+
+    <TextView
+        android:id="@+id/textView_checkUserInfoPopup_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="验证用户信息"
+        android:textColor="@color/gray" />
+
+    <com.cammuse.intelligence.common.EdittextWithClear
+        android:id="@+id/edittextWithClear_checkUserInfoPopup_username"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_edittext_login"
+        android:ems="10"
+        android:hint="手机号"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <requestFocus />
+    </com.cammuse.intelligence.common.EdittextWithClear>
+
+    <com.cammuse.intelligence.common.EdittextWithClear
+        android:id="@+id/edittextWithClear_checkUserInfoPopup_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_edittext_login"
+        android:ems="10"
+        android:hint="密码"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/button_checkUserInfoPopup_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_button_popup_left"
+            android:text="取消"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_checkUserInfoPopup_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_button_popup_right"
+            android:text="确定"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

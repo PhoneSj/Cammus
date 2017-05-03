@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@mipmap/login_username_imageview_focused" android:state_focused="true"></item>
+    <item android:drawable="@mipmap/login_username_imageview_normal"></item>
+
+</selector>

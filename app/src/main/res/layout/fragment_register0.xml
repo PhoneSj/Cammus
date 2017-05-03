@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <com.cammuse.intelligence.common.EdittextWithClear
+            android:id="@+id/editTextWithClear_registerFrag0_username"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_edittext_register"
+            android:ems="10"
+            android:hint="手机号码"
+            android:inputType="phone"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <com.cammuse.intelligence.common.EdittextWithClear
+                android:id="@+id/edittextWithClear_registerFrag0_imgCode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:layout_weight="1"
+                android:background="@drawable/selector_edittext_register"
+                android:ems="10"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" />
+
+            <ImageView
+                android:id="@+id/imageView_registerFrag0_imgCode"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_edittext_register"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:src="@mipmap/ic_launcher" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout_registerFrag0_prompt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/prompt" />
+
+            <TextView
+                android:id="@+id/textView_registerFrag0_prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="New Text"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/prompt_textsize" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_registerFrag0_goto"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_button_round_green"
+            android:text="立即注册"
+            android:textColor="@color/gray" />
+
+    </LinearLayout>
+
+</LinearLayout>

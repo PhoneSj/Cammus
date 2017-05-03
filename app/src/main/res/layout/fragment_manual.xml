@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/manual_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <Button
+            android:id="@+id/button_manualFrag_at"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/selector_radiobutton_manual_mode_at" />
+
+        <Button
+            android:id="@+id/button_manualFrag_mt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_radiobutton_manual_mode_mt" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_manualFrag_triangle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/manual_triangle_down" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/manual_triangle_up" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/manual_triangle_down" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/manual_triangle_up" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/manual_triangle_down" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/manual_triangle_up" />
+    </RelativeLayout>
+
+    <com.cammuse.intelligence.common.SqureViewGroup
+        android:id="@+id/squreViewGroup_manualFrag_controlArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <com.cammuse.intelligence.common.CenterButton
+            android:id="@+id/centerButton_manualFrag_currentMode"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/mode_original" />
+
+        <com.cammuse.intelligence.common.CircleLayout
+            android:id="@+id/circleLayout_manualFrag_controlArea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            circle:firstChildPosition="South"
+            circle:isRotating="true"
+            circle:rotateToCenter="true">
+
+            <ImageView
+                android:id="@+id/imageView_manualFrag_original"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/mode_original" />
+
+            <ImageView
+                android:id="@+id/imageView_manualFrag_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/mode_save" />
+
+            <ImageView
+                android:id="@+id/imageView_manualFrag_sport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/mode_sport" />
+
+            <ImageView
+                android:id="@+id/imageView_manualFrag_super"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/mode_super" />
+
+            <ImageView
+                android:id="@+id/imageView_manualFrag_race"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/mode_race" />
+
+            <ImageView
+                android:id="@+id/imageView_manualFrag_smart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/mode_smart" />
+        </com.cammuse.intelligence.common.CircleLayout>
+    </com.cammuse.intelligence.common.SqureViewGroup>
+
+    <FrameLayout
+        android:id="@+id/frameLayout_mainAct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/imageView_manualFrag_modeBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/bar0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button_manualFrag_sub"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:alpha="0" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"/>
+
+            <Button
+                android:id="@+id/button_manualFrag_add"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:alpha="0" />
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

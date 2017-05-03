@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/title_relativeLayout"
+        android:background="@mipmap/navigation_bar4" >
+
+        <com.cammuse.intelligence.customview.CustomFontTextView
+            android:id="@+id/textView1"
+            style="@style/title_center_textview"
+            android:text="@string/activity_bluetooth_name" />
+
+        <ImageView
+            android:id="@+id/imageView_back_bluetoothAct"
+            style="@style/title_left_imageview"
+            android:src="@drawable/selector_imageview_back" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_connect_bluetoothAct"
+            style="@style/setting_item" >
+
+            <ImageView
+                android:id="@+id/imageView_state_bluetoothAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/bluetooth_close_bg" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="设备连接"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/bluetooth_division" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_modify_bluetoothAct"
+            style="@style/setting_item" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="修改设备名称"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView_deviceName_bluetoothAct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/all_enter" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/bluetooth_division" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_unbind_bluetoothAct"
+            style="@style/setting_item" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="解除绑定"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/all_enter" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ImageView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/bluetooth_division" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/title_relativeLayout"
+        android:background="@color/blue">
+
+        <TextView
+            style="@style/title_textsize"
+            android:text="@string/fragment_tool_title_name" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridView_toolFrag_functions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:numColumns="3" />
+
+
+</LinearLayout>

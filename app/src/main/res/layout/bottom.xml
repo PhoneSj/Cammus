@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_light"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_main_tab_device"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/imageButton_main_tab_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@mipmap/main_button_device_down" />
+
+        <TextView
+            android:id="@+id/textView_main_tab_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_device_title_name"
+            android:textColor="@color/gray_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_main_tab_tool"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/imageButton_main_tab_tool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@mipmap/main_button_tool_up" />
+
+        <TextView
+            android:id="@+id/textView_main_tab_tool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_tool_title_name"
+            android:textColor="@color/gray_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_main_tab_mall"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/imageButton_main_tab_mall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@mipmap/main_button_mall_up" />
+
+        <TextView
+            android:id="@+id/textView_main_tab_mall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_mall_title_name"
+            android:textColor="@color/gray_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_main_tab_personal"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/imageButton_main_tab_personal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@mipmap/main_button_personal_up" />
+
+        <TextView
+            android:id="@+id/textView_main_tab_personal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_personal_title_name"
+            android:textColor="@color/gray_dark" />
+    </LinearLayout>
+
+</LinearLayout>

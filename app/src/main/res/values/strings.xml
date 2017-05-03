@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">卡妙思</string>
+    <string name="action_settings">Settings</string>
+    <string name="fragment_device_title_name">我的设备</string>
+    <string name="fragment_mall_title_name">网上商城</string>
+    <string name="fragment_tool_title_name">功能大全</string>
+    <string name="fragment_personal_title_name">个人中心</string>
+
+    <string name="logo">版权：深圳市卡妙思电子科技有限公司</string>
+    <string name="ble_not_supported">您的设备不支持BLE</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">查找BLE设备</string>
+    <string name="unknown_device">未知的蓝牙设备</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+    <string name="app_speed">卡妙思-加速性能测试  </string>
+    <string name="app_driver">卡妙思-智能节气门控制器  </string>
+    <!-- Menu items -->
+    <string name="menu_connect">连接</string>
+    <string name="menu_disconnect">断开</string>
+    <string name="menu_scan">搜索</string>
+    <string name="menu_stop">停止</string>
+    <string name="help_intruduction">蓝牙连接提醒：连接蓝牙时，当您绑定到错误设备后，需要到蓝牙设置界面解除绑定再连接到正确设备\n操作说明：\n1、进入操作界面后，右上角开关为手动调节(MT)与自动调节(AT)模式，您可以进行自由切换\n2、主界面为操作模式选择，正中图标按钮可以自由滑向周围图标，轻轻滑动手指，您可以选择自己喜欢的任一模式\n3、最下方为速度条，左右滑动或者点击加减按钮可调节速度大小，想要驾驶更为激烈，则选择(+)或向右滑动，反之，则选择(-)或向左滑动）"</string>
+
+    <!-- FunctionActivity -->
+    <string name="not_bind_ble_device">没有绑定蓝牙设备</string>
+    <string name="not_support_bluetooth">设备不支持蓝牙功能</string>
+    <string name="please_disconnect_ble">请断开连接</string>
+    <string name="please_connect_ble">请先连接</string>
+    <string name="not_support_below_version_android">该应用不支持Android4.3以下版本</string>
+    <string name="activity_sutdy_name">学习模式</string>
+    <string name="activity_menu_name">智能驾驶</string>
+    <string name="activity_about_name">关于</string>
+    <string name="activity_update_name">检查更新</string>
+    <string name="activity_bluetooth_name">蓝牙设置</string>
+    <string name="activity_forgetpassword_name">忘记密码</string>
+    <string name="activity_help_name">帮助</string>
+    <string name="activity_help_mode_name">模式切换</string>
+    <string name="activity_help_bar_name">模式微调</string>
+    <string name="activity_help_am_name">AT/MT</string>
+    <string name="activity_main_name">控制器</string>
+    <string name="activity_setting_name">设置</string>
+    <string name="activity_lock_name">手势密码锁定</string>
+    <string name="ble_is_collected">已连接</string>
+    <string name="ble_is_discollected">已断开</string>
+
+    <!-- ControlActivity -->
+    <string name="activity_control_tab_manual_name">手动控制</string>
+    <string name="activity_control_tab_automatic_name">智能控制</string>
+    <string name="fragment_manual_title_manual_name">手动控制</string>
+</resources>

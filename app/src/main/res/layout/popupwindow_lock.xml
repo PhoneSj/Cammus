@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/title_relativeLayout"
+        android:background="@color/blue">
+
+        <ImageView
+            android:id="@+id/imageView_lockPopup_back"
+            style="@style/title_left_imageview"
+            android:src="@drawable/selector_imageview_back" />
+
+        <TextView
+            style="@style/title_textsize"
+            android:text="设置手势密码" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.cammuse.intelligence.gesture.lock.LockPreView
+            android:id="@+id/lockPreView_lockPopup_preview"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/textView_lockPoput_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="绘制解锁密码"
+            android:textColor="@color/gray" />
+    </LinearLayout>
+
+    <com.cammuse.intelligence.gesture.lock.GestureLockViewGroup
+        android:id="@+id/gestureLockViewGroup_lockPopup_setLock"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:gravity="center_vertical"
+        zhy:color_finger_on="@color/blue"
+        zhy:color_finger_up="@color/brown"
+        zhy:count="3"
+        zhy:paddingEnd="20dp"
+        zhy:paddingStart="20dp"
+        android:layout_marginBottom="100dp"/>
+
+</LinearLayout>

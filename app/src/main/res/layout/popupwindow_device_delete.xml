@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_pur"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <TextView
+        android:id="@+id/textView_deletePopup_delete"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_item_height"
+        android:gravity="center"
+        android:text="删除"
+        android:textSize="@dimen/content_textsize_small" />
+
+    <TextView style="@style/diver" />
+
+    <TextView
+        android:id="@+id/textView_deletePopup_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_item_height"
+        android:gravity="center"
+        android:text="取消"
+        android:textSize="@dimen/content_textsize_small" />
+</LinearLayout>

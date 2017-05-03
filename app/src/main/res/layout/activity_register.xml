@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/title_relativeLayout"
+        android:background="@color/blue">
+
+        <ImageView
+            android:id="@+id/imageView_registerAct_back"
+            style="@style/title_left_imageview"
+            android:src="@drawable/selector_imageview_back" />
+
+        <TextView
+            style="@style/title_textsize"
+            android:text="新用户注册" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textView_registerAct_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="注册卡妙思账号"
+            android:textColor="@color/green"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout_registerAct_container"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+</LinearLayout>

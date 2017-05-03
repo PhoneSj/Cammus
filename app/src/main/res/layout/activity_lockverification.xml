@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayout_lockverificationAct_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_light"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/logo" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="请绘制手势密码"
+            android:textColor="@color/gray" />
+    </RelativeLayout>
+
+    <com.cammuse.intelligence.gesture.lock.GestureLockViewGroup
+        android:id="@+id/gestureLockViewGroup_lockverificationAct_lock"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+
+        android:gravity="center_vertical"
+        zhy:count="3"
+        zhy:tryTimes="5" >
+    </com.cammuse.intelligence.gesture.lock.GestureLockViewGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/textView_lockverificatinAct_forgetLock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="忘记密码"
+            android:textColor="@color/blue"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

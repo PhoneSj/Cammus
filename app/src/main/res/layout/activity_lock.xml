@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout_lockAct_root">
+
+    <RelativeLayout
+        style="@style/title_relativeLayout"
+        android:background="@color/blue">
+
+        <ImageView
+            android:id="@+id/imageView_lockAct_back"
+            style="@style/title_left_imageview"
+            android:src="@drawable/selector_imageview_back" />
+
+        <TextView
+            style="@style/title_textsize"
+            android:text="手势密码" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/setting_item"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            style="@style/setting_item_left_textview"
+            android:text="手势锁密码锁定"
+            android:textColor="@color/black_light" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton_lockAct_enableLock"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/item_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:button="@drawable/selector_togglebutton_study"
+            android:checked="false"
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_lockAct_modifyLock"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_button_modifypwd"
+        android:text="修改手势密码"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/content_textsize_middle" />
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="tool_function_names">
+        <item>油门加速器</item>
+        <item>加速测试</item>
+        <item>故障诊断</item>
+        <item>刹车测试</item>
+        <item>油耗测试</item>
+        <item>行车记录</item>
+        <item>油耗监控</item>
+        <item>驾驶监控</item>
+        <item>赛道测试</item>
+    </string-array>
+    <string-array name="login_userinfo_legality">
+        <item>用户名不能为空</item>
+        <item>用户名长度必须为6-20个字符</item>
+        <item>密码不能为空</item>
+        <item>密码长度必须为6-20个字符</item>
+    </string-array>
+    <string-array name="register_userinfo_legality">
+        <item>用户名不能为空</item>
+        <item>用户名长度必须为6-20个字符</item>
+        <item>本地验证码不能为空</item>
+        <item>本地验证码输入错误</item>
+        <item>短信验证码不能为空</item>
+        <item>短信验证码输入错误</item>
+        <item>密码不能为空</item>
+        <item>密码长度必须为6-20个字符</item>
+        <item>两次输入密码不一致</item>
+    </string-array>
+
+</resources>

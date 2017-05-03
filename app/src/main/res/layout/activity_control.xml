@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_title_controlAct"
+        style="@style/title_relativeLayout"
+        android:background="@color/blue">
+
+        <TextView
+            android:id="@+id/textView_titleName_controlAct"
+            style="@style/title_center_textview"
+            android:text="@string/fragment_manual_title_manual_name" />
+
+        <ImageView
+            android:id="@+id/imageView_controlAct_back"
+            style="@style/title_left_imageview"
+            android:src="@drawable/selector_imageview_back" />
+
+        <ImageView
+            android:id="@+id/imageView_share_controlAct"
+            style="@style/title_right_imageview"
+            android:src="@drawable/selector_imageview_share" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_controlAct"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <include layout="@layout/bottom_control" />
+
+</LinearLayout>

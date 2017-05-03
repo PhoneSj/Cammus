@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <ImageView
+            android:id="@+id/imageView_registerFrag2_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textView_registerFrag2_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Phone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="该账号已经存在" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button_registerFrag2_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_button_round_green"
+        android:text="直接登录"
+        android:textColor="@color/gray" />
+
+    <Button
+        android:id="@+id/button_registerFrag2_backToMain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_button_round_green"
+        android:text="返回首页"
+        android:textColor="@color/gray" />
+
+
+</LinearLayout>
